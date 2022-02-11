@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3626525312854854036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3626525312854854037}
+  - component: {fileID: 3626525312854854035}
+  - component: {fileID: 3626525312854854034}
+  - component: {fileID: 3626525312854854033}
+  - component: {fileID: 3626525312854854063}
+  - component: {fileID: 3965260552799819687}
+  m_Layer: 0
+  m_Name: CheeseMeshTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3626525312854854037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_LocalRotation: {x: -0, y: -0.12188486, z: -0, w: 0.99254423}
+  m_LocalPosition: {x: 2.18, y: 1.77, z: -6.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -14.002, z: 0}
+--- !u!33 &3626525312854854035
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_Mesh: {fileID: 0}
+--- !u!114 &3626525312854854034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6a53706a9340e3858b02e4b35747b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 1.39
+  length: 1.31
+  angle: 109.4
+  triDivisions: 10
+--- !u!114 &3626525312854854033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5004dbc96f3024343b98974a8853aa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Memo: 'This script SHOULD NOT be used with a mesh renderer, as it is the vision
+    cone''s collider
+
+
+    To update the collider''s mesh to the parameters set in
+    the inspector, simply double click either the "Convex" or "Is Trigger" checkboxes
+    and it will recalculate the vertexPositions
+
+
+    So the _Green_ object is the
+    actual collider, and the yellow is only a preview'
+--- !u!114 &3626525312854854063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e595e4a75856534d8e6455708e9a282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMessage: Hello
+--- !u!64 &3965260552799819687
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626525312854854036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
